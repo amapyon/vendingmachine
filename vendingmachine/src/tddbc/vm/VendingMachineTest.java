@@ -42,7 +42,13 @@ public class VendingMachineTest {
 		vm.pay(1000);
 		vm.pay(1000);
 		assertEquals(3320, vm.amount());
+	}
 
+	@Test
+	public void testRepay() {
+		vm.pay(100);
+		assertEquals(100, vm.repay());
+		assertEquals(0, vm.amount());
 	}
 
 }

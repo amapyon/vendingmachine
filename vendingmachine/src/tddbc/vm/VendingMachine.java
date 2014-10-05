@@ -16,4 +16,8 @@ public class VendingMachine {
 		this.amount += amount;
 	}
 
+	public int repay() {
+		return 0;
+	}
+
 }
