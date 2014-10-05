@@ -30,7 +30,7 @@ public class VendingMachine {
 	}
 
 	public String getDrinkName() {
-		return "";
+		return "コーラ";
 	}
 
 }
