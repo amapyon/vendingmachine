@@ -56,7 +56,6 @@ public class VendingMachine {
 	}
 
 	public int totalAmount() {
-		// TODO 自動生成されたメソッド・スタブ
 		return 0;
 	}
 
