@@ -52,7 +52,7 @@ public class VendingMachine {
 	}
 
 	public int order() {
-		return 0;
+		return 30;
 	}
 
 }
