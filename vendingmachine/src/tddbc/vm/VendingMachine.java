@@ -13,7 +13,14 @@ public class VendingMachine {
 	}
 
 	public void pay(int amount) {
-		this.amount += amount;
+		switch (amount) {
+		case 10:
+		case 50:
+		case 100:
+		case 500:
+		case 1000:
+			this.amount += amount;
+		}
 	}
 
 	public int repay() {
