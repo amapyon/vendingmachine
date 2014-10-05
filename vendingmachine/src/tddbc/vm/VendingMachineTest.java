@@ -97,6 +97,7 @@ public class VendingMachineTest {
 		vm.pay(500);
 		assertEquals(380, vm.order());
 		assertEquals(240, vm.totalAmount());
+		assertEquals(3, vm.getDrinkQuantity());
 	}
 
 	@Test

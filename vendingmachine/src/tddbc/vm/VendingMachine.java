@@ -57,6 +57,8 @@ public class VendingMachine {
 		if (amount < drinkPrice) return 0;
 
 		totalAmount += drinkPrice;
+		drinkQuantity--;
+
 		int charge = amount - drinkPrice;
 		amount = 0;
 		return charge;
