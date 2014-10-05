@@ -29,4 +29,8 @@ public class VendingMachine {
 		return repay;
 	}
 
+	public String getDrinkName() {
+		return "";
+	}
+
 }
