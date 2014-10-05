@@ -51,4 +51,8 @@ public class VendingMachine {
 		return drinkQuantity;
 	}
 
+	public int order() {
+		return 0;
+	}
+
 }
