@@ -121,5 +121,13 @@ public class VendingMachineTest {
 	@Test
 	public void testCanOrder() {
 		assertFalse(vm.canOrder());
+
+		vm.pay(500);
+		assertTrue(vm.canOrder());
+
+		vm = new VendingMachine("コーラ", 120, 0);
+		vm.pay(500);
+		assertFalse(vm.canOrder());
+
 	}
 }

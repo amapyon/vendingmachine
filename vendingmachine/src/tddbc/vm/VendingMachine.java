@@ -54,8 +54,7 @@ public class VendingMachine {
 	}
 
 	public void order() {
-		if (amount < drinkPrice) return;
-		if (drinkQuantity == 0) return;
+		if (!canOrder()) return;
 
 		totalAmount += drinkPrice;
 		amount -= drinkPrice;
@@ -67,6 +66,8 @@ public class VendingMachine {
 	}
 
 	public boolean canOrder() {
+		if (amount < drinkPrice) return false;
+		if (drinkQuantity == 0) return false;
 		return true;
 	}
 
