@@ -76,4 +76,10 @@ public class VendingMachineTest {
 		assertEquals(0, vm.amount());
 	}
 
+	@Test
+	public void testConstructor() {
+		vm = new VendingMachine("コーラ", 120, 1);
+		assertEquals(1, vm.getDrinkQuantity());
+	}
+
 }

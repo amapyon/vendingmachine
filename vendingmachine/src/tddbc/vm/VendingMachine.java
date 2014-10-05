@@ -14,6 +14,10 @@ public class VendingMachine {
 		drinkQuantity = 5;
 	}
 
+	public VendingMachine(String drinkName, int dinrkPrice, int drinkQuantity) {
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
+
 	public int amount() {
 		return amount;
 	}
