@@ -2,6 +2,7 @@ package tddbc.vm;
 
 public class VendingMachine {
 
+	private int totalAmount;
 	private int amount;
 	private String drinkName;
 	private int drinkPrice;
@@ -12,6 +13,7 @@ public class VendingMachine {
 	}
 
 	public VendingMachine(String drinkName, int drinkPrice, int drinkQuantity) {
+		totalAmount = 0;
 		amount = 0;
 		this.drinkName = drinkName;
 		this.drinkPrice = drinkPrice;
@@ -52,11 +54,13 @@ public class VendingMachine {
 	}
 
 	public int order() {
-		return amount - drinkPrice;
+		totalAmount += drinkPrice;
+		int charge = amount - drinkPrice;
+		return charge;
 	}
 
 	public int totalAmount() {
-		return 120;
+		return totalAmount;
 	}
 
 }
