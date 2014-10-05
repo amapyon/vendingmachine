@@ -26,7 +26,7 @@ public class VendingMachineTest {
 	}
 
 	@Test
-	public void testPays() {
+	public void testPayRegular() {
 		vm.pay(10);
 		vm.pay(10);
 		assertEquals(20, vm.amount());
@@ -42,6 +42,16 @@ public class VendingMachineTest {
 		vm.pay(1000);
 		vm.pay(1000);
 		assertEquals(3320, vm.amount());
+	}
+
+	@Test
+	public void testPayIrregular() {
+		vm.pay(1);
+		vm.pay(5);
+		vm.pay(2000);
+		vm.pay(5000);
+		vm.pay(10000);
+		assertEquals(0, vm.amount());
 	}
 
 	@Test
