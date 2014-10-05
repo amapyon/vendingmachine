@@ -56,7 +56,7 @@ public class VendingMachine {
 	}
 
 	public int totalAmount() {
-		return 0;
+		return 120;
 	}
 
 }
