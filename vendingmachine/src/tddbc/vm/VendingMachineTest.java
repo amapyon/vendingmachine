@@ -25,6 +25,24 @@ public class VendingMachineTest {
 		assertEquals(100, vm.amount());
 	}
 
+	@Test
 	public void testPays() throws Exception {
+		vm.pay(10);
+		vm.pay(10);
+		assertEquals(20, vm.amount());
+		vm.pay(50);
+		vm.pay(50);
+		assertEquals(120, vm.amount());
+		vm.pay(100);
+		vm.pay(100);
+		assertEquals(320, vm.amount());
+		vm.pay(500);
+		vm.pay(500);
+		assertEquals(1320, vm.amount());
+		vm.pay(1000);
+		vm.pay(1000);
+		assertEquals(3320, vm.amount());
+
 	}
+
 }
