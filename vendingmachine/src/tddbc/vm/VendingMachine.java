@@ -41,8 +41,4 @@ public class VendingMachine {
 		return drinkPrice;
 	}
 
-	public int getDrinkQuantity() {
-		return 0;
-	}
-
 }
