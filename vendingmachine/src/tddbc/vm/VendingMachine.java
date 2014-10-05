@@ -3,9 +3,11 @@ package tddbc.vm;
 public class VendingMachine {
 
 	private int amount;
+	private String drinkName;
 
 	public VendingMachine() {
 		amount = 0;
+		drinkName = "コーラ";
 	}
 
 	public int amount() {
@@ -30,7 +32,7 @@ public class VendingMachine {
 	}
 
 	public String getDrinkName() {
-		return "コーラ";
+		return drinkName;
 	}
 
 }
