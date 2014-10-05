@@ -36,7 +36,7 @@ public class VendingMachine {
 	}
 
 	public int getDrinkPrice() {
-		return 0;
+		return 120;
 	}
 
 }
