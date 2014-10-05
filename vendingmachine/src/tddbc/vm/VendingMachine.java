@@ -55,4 +55,9 @@ public class VendingMachine {
 		return amount - drinkPrice;
 	}
 
+	public int totalAmount() {
+		// TODO 自動生成されたメソッド・スタブ
+		return 0;
+	}
+
 }
