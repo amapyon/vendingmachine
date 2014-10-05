@@ -20,13 +20,13 @@ public class VendingMachineTest {
 	}
 
 	@Test
-	public void testPay100() throws Exception {
+	public void testPay100() {
 		vm.pay(100);
 		assertEquals(100, vm.amount());
 	}
 
 	@Test
-	public void testPays() throws Exception {
+	public void testPays() {
 		vm.pay(10);
 		vm.pay(10);
 		assertEquals(20, vm.amount());

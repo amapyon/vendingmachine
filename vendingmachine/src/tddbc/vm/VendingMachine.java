@@ -17,8 +17,9 @@ public class VendingMachine {
 	}
 
 	public int repay() {
+		int repay = amount;
 		amount = 0;
-		return 100;
+		return repay;
 	}
 
 }
