@@ -103,9 +103,18 @@ public class VendingMachineTest {
 	@Test
 	public void testCantBuyWhenLessAmount() {
 		vm.pay(100);
-		assertEquals(100, vm.amount());
 		assertEquals(0, vm.order());
+		assertEquals(100, vm.amount());
 		assertEquals(0, vm.totalAmount());
 	}
 
+	@Test
+	public void testCantBuyWhenZeroDrinkQuantity() {
+		vm = new VendingMachine("コーラ", 120, 0);
+		vm.pay(500);
+		assertEquals(0, vm.order());
+		assertEquals(0, vm.getDrinkQuantity());
+		assertEquals(500, vm.amount());
+		assertEquals(0, vm.totalAmount());
+	}
 }
