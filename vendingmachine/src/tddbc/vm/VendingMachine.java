@@ -5,11 +5,13 @@ public class VendingMachine {
 	private int amount;
 	private String drinkName;
 	private int drinkPrice;
+	private int drinkQuantity;
 
 	public VendingMachine() {
 		amount = 0;
 		drinkName = "コーラ";
 		drinkPrice = 120;
+		drinkQuantity = 5;
 	}
 
 	public int amount() {
@@ -42,7 +44,7 @@ public class VendingMachine {
 	}
 
 	public int getDrinkQuantity() {
-		return 5;
+		return drinkQuantity;
 	}
 
 }
