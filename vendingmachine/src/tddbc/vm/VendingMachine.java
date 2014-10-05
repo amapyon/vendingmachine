@@ -66,4 +66,8 @@ public class VendingMachine {
 		return totalAmount;
 	}
 
+	public boolean canOrder() {
+		return true;
+	}
+
 }
