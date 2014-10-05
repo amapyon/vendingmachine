@@ -42,7 +42,7 @@ public class VendingMachine {
 	}
 
 	public int getDrinkQuantity() {
-		return 0;
+		return 5;
 	}
 
 }
