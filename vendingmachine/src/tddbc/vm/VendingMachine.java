@@ -35,4 +35,8 @@ public class VendingMachine {
 		return drinkName;
 	}
 
+	public int getDrinkPrice() {
+		return 0;
+	}
+
 }

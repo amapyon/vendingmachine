@@ -25,6 +25,11 @@ public class VendingMachineTest {
 	}
 
 	@Test
+	public void testDrinkPrice() {
+		assertEquals(120, vm.getDrinkPrice());
+	}
+
+	@Test
 	public void testPay100() {
 		vm.pay(100);
 		assertEquals(100, vm.amount());
