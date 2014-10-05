@@ -95,4 +95,12 @@ public class VendingMachineTest {
 		assertEquals(240, vm.totalAmount());
 	}
 
+	@Test
+	public void testCantBuyWhenLessAmount() {
+		vm.pay(100);
+		assertEquals(100, vm.order());
+		assertEquals(0, vm.order());
+		assertEquals(240, vm.totalAmount());
+	}
+
 }
