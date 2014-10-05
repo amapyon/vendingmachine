@@ -89,13 +89,13 @@ public class VendingMachineTest {
 
 		vm.pay(100);
 		vm.pay(50);
-		assertEquals(30, vm.order());
+		vm.order();
 		assertEquals(120, vm.totalAmount());
-		assertEquals(0, vm.amount());
+		assertEquals(30, vm.amount());
 		assertEquals(4, vm.getDrinkQuantity());
 
 		vm.pay(500);
-		assertEquals(380, vm.order());
+		vm.order();
 		assertEquals(240, vm.totalAmount());
 		assertEquals(3, vm.getDrinkQuantity());
 	}
@@ -103,7 +103,7 @@ public class VendingMachineTest {
 	@Test
 	public void testCantBuyWhenLessAmount() {
 		vm.pay(100);
-		assertEquals(0, vm.order());
+		vm.order();
 		assertEquals(100, vm.amount());
 		assertEquals(0, vm.totalAmount());
 	}
@@ -112,7 +112,7 @@ public class VendingMachineTest {
 	public void testCantBuyWhenZeroDrinkQuantity() {
 		vm = new VendingMachine("コーラ", 120, 0);
 		vm.pay(500);
-		assertEquals(0, vm.order());
+		vm.order();
 		assertEquals(0, vm.getDrinkQuantity());
 		assertEquals(500, vm.amount());
 		assertEquals(0, vm.totalAmount());

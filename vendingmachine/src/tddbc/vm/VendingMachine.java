@@ -53,16 +53,13 @@ public class VendingMachine {
 		return drinkQuantity;
 	}
 
-	public int order() {
-		if (amount < drinkPrice) return 0;
-		if (drinkQuantity == 0) return 0;
+	public void order() {
+		if (amount < drinkPrice) return;
+		if (drinkQuantity == 0) return;
 
 		totalAmount += drinkPrice;
+		amount -= drinkPrice;
 		drinkQuantity--;
-
-		int charge = amount - drinkPrice;
-		amount = 0;
-		return charge;
 	}
 
 	public int totalAmount() {
