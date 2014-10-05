@@ -8,15 +8,14 @@ public class VendingMachine {
 	private int drinkQuantity;
 
 	public VendingMachine() {
-		amount = 0;
-		drinkName = "コーラ";
-		drinkPrice = 120;
-		drinkQuantity = 5;
+		this("コーラ", 120, 5);
 	}
 
-	public VendingMachine(String drinkName, int dinrkPrice, int drinkQuantity) {
-		// TODO 自動生成されたコンストラクター・スタブ
-		this.drinkQuantity = 1;
+	public VendingMachine(String drinkName, int drinkPrice, int drinkQuantity) {
+		amount = 0;
+		this.drinkName = drinkName;
+		this.drinkPrice = drinkPrice;
+		this.drinkQuantity = drinkQuantity;
 	}
 
 	public int amount() {
